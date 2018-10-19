@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resume</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome5/css/fontawesome-all.css">
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mako" rel="stylesheet">
     <style>
@@ -25,13 +26,15 @@
     </style>
 </head>
 <body class="bg-secondary">
-    <div class="container shadow-lg p-3 mb-5 bg-white rounded mt-5">
+    <div class="container shadow-lg p-3 mb-5 bg-light rounded mt-5">
         <div class="row mx-2">
-            <div class="col-12 pb-3">
+            <div class="col-12 bg-dark py-2 text-light mb-3">
                 <h2 class="text-center">Resume</h2>
             </div>
+
+            <!-- site left -->
             <div class="col-7">
-                <p class="text-center">
+                <p class="text-center border rounded py-3 ">
                     <b>
                     Mr.Prayod Saekue<br>
                     Tel : 088-2616854<br>
@@ -39,7 +42,7 @@
                     </b>
                 </p>
                 <hr>
-                <h5><b>Career Objective</b></h5>
+                <h5><b>Career Objective</b><i class="fas fa-bullseye d-block float-right"></i></h5>
                 <font size="2">
                 <p>
                     <ul>
@@ -55,7 +58,7 @@
                     </ul>
                 </p>
                 </font>
-                <h5><b>Portfolio</b></h5>
+                <h5><b>Portfolio</b><i class="fas fa-folder-open d-block float-right"></i></h5>
                 <font size="2">
                 <p>
                     <ul>
@@ -68,25 +71,44 @@
                     </ul>
                 </p>
                 </font>
-                <p><b>Work Experience :</b> Never had work experience.</p>
+                <h5><b> Work Experience</b><i class="fas fa-pencil-alt d-block float-right"></i></h5>
+                <ul>
+                    <li>
+                        <i>Never had work experience</i>
+                    </li>
+                </ul>
 
-                <h5><b>Education History</b></h5>
+                <h5><b>Education History</b><i class="fas fa-graduation-cap d-block float-right"></i></h5>
                 <font size="2">
                 <p>
                     <ul>
                         <li>
-                            2009 – 2011 - High School , Sapphawithayakhom School , Maesod Tak
+                            2009 – 2011 <br>
+                            High School , Sapphawithayakhom School , Maesod Tak
                         </li>
                         <li>
-                            2012 – 2017 - Faculty of Political Science , Ramkhamhaeng University<br>
+                            2012 – 2017 <br>
+                            Faculty of Political Science , Ramkhamhaeng University<br>
                         </li>
                     </ul>
                 </p>
                 </font>
+                <hr>
+                <div class="text-center">
+                    <a href="https://www.facebook.com/profile.php?id=100001714009585" style="color: #3B5998;" target="blank">
+                        <i class="fab fa-lg fa-facebook-square"></i> <b>Prayoth YP Saekue</b>
+                    </a> / 
+                    <i class="fab fa-line fa-lg text-success"></i> <b>Yoth_PY</b>
+                </div>
+                <hr style="margin-bottom: 0px;">
                 
             </div>
-            <div class="col-5 border-left">
-                <img style="width:100px;" class="d-block mx-auto rounded" src="assets/img/avatar.jpg">
+
+            <!-- site right -->
+            <div class="col-5 border-left bg-info">
+                <div class="pt-2">
+                    <img style="width:100px;" class="d-block mx-auto rounded" src="assets/img/img_profile.jpg">
+                </div>
                 <div class="mt-3">
                     <h5><b>Personal Information</b></h5>
                     <font size="2">
@@ -109,20 +131,29 @@
                         <b>• Interest and Activities :</b> Study coding , Exercise , Games<br>
                     </p>
                     </font>
-                    <h5><b>Skill</b></h5>
+                    <hr class="bg-dark">
+                    <h5><b>Skill</b><i class="fas fa-file-code d-block float-right"></i></h5>
                     <font size="2">
-                    <p>
-                        <b>• HTML , CSS , (Bootstrap4)</b><br>
-                        <b>• PHP , SQL , MySql Server</b><br>
-                        <b>• jQuery (Basic)</b>
-                    </p>
-                    <p>
-                        <i>
-                            <p>
-                               
-                            </p>
-                        </i>
-                    </p>
+                    • HTML5
+                    <div class="progress mb-2" style="height: 2px;">
+                        <div class="progress-bar" role="progressbar" style="width: 70%; background-color: blue;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    • CSS (Bootstrap4)
+                    <div class="progress mb-2" style="height: 2px;">
+                        <div class="progress-bar" role="progressbar" style="width: 50%; background-color: blue;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    • PHP
+                    <div class="progress mb-2" style="height: 2px;">
+                        <div class="progress-bar" role="progressbar" style="width: 70%; background-color: blue;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    • SQL , MySql
+                    <div class="progress mb-2" style="height: 2px;">
+                        <div class="progress-bar" role="progressbar" style="width: 60%; background-color: blue;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    • jQuery
+                    <div class="progress mb-2" style="height: 2px;">
+                        <div class="progress-bar" role="progressbar" style="width: 30%; background-color: blue;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                     </font>
                 </div>
             </div>
