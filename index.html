@@ -10,24 +10,49 @@
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mako" rel="stylesheet">
     <style>
-        body {
-            height: 842px;
-            width: 595px;
-            /* to centre page on screen*/
-            margin-left: auto;
-            margin-right: auto;
-        }
         body h2 {
             font-family: 'Acme', sans-serif;
         }
         body {
             font-family: 'Mako', sans-serif;
         }
+        span {
+            word-wrap: break-word;
+        }
+        .col-7 {
+            padding-left: 0px;
+        }
+
+        @media (max-width: 570px) {
+            body {
+                height: 100%;
+                width: 100%;
+            }
+            .col-7 li {
+                margin-left: -15px;
+            }
+            
+        }
+        @media (max-width: 360px) {
+            .col-5 img {
+                width: 100%;
+            }
+            
+        }
+        @media (min-width: 570px) {
+            body {
+                height: 842px;
+                width: 595px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
     </style>
 </head>
 <body class="bg-secondary">
-    <div class="container shadow-lg p-3 mb-5 bg-light rounded mt-5">
-        <div class="row mx-2">
+    <div class="container shadow-lg p-3 mb-5 bg-light rounded mt-5 w-100">
+        <div class="row mx-1">
             <div class="col-12 bg-dark py-2 text-light mb-3">
                 <h2 class="text-center">Resume</h2>
             </div>
@@ -38,11 +63,11 @@
                     <b>
                     Mr.Prayod Saekue<br>
                     Tel : 088-2616854<br>
-                    E-mail : yeahdarling@gmail.com<br>
+                    E-mail : <span> yeahdarling@gmail.com</span><br>
                     </b>
                 </p>
                 <hr>
-                <h5><b>Career Objective</b><i class="fas fa-bullseye d-block float-right"></i></h5>
+                <p><b>Career Objective</b><i class="fas fa-bullseye d-block float-right"></i></p>
                 <font size="2">
                 <p>
                     <ul>
@@ -58,7 +83,7 @@
                     </ul>
                 </p>
                 </font>
-                <h5><b>Portfolio</b><i class="fas fa-folder-open d-block float-right"></i></h5>
+                <p><b>Portfolio</b><i class="fas fa-folder-open d-block float-right"></i></p>
                 <font size="2">
                 <p>
                     <ul>
@@ -66,19 +91,19 @@
                             HTML (<a href="https://sclass1-e2452.firebaseapp.com/index.html" target="blank">Study History</a>)
                         </li>
                         <li>
-                            PHP Project (<a href="https://github.com/ikhaav/photo-contest" target="blank">https://github.com/ikhaav/photo-contest</a>)
+                            PHP Project (<span><a href="https://github.com/ikhaav/photo-contest" target="blank">https://github.com/ikhaav/photo-contest</a></span>)
                         </li>
                     </ul>
                 </p>
                 </font>
-                <h5><b> Work Experience</b><i class="fas fa-pencil-alt d-block float-right"></i></h5>
+                <p><b> Work Experience</b><i class="fas fa-pencil-alt d-block float-right"></i></p>
                 <ul>
                     <li>
                         <i>Never had work experience</i>
                     </li>
                 </ul>
 
-                <h5><b>Education History</b><i class="fas fa-graduation-cap d-block float-right"></i></h5>
+                <p><b>Education History</b><i class="fas fa-graduation-cap d-block float-right"></i></p>
                 <font size="2">
                 <p>
                     <ul>
@@ -106,11 +131,11 @@
 
             <!-- site right -->
             <div class="col-5 border-left bg-info">
-                <div class="pt-2">
-                    <img style="width:100px;" class="d-block mx-auto rounded" src="assets/img/img_profile.jpg">
+                <div class="pt-2 text-center">
+                    <img width="100px" class="rounded" src="assets/img/img_profile.jpg">
                 </div>
                 <div class="mt-3">
-                    <h5><b>Personal Information</b></h5>
+                    <p><b>Personal Info</b></p>
                     <font size="2">
                     <p>
                         <b>• Name :</b> Mr.Prayod Saekue <br>
@@ -118,7 +143,7 @@
 
                         <b>• Mobile :</b> 088-2616854<br>
 
-                        <b>• Email :</b> yeahdarling@gmail.com<br>
+                        <b>• Email :</b> <span> yeahdarling@gmail.com</span><br>
 
                         <b>• Date of birth :</b> 20 August 1992<br>
 
@@ -132,7 +157,7 @@
                     </p>
                     </font>
                     <hr class="bg-dark">
-                    <h5><b>Skill</b><i class="fas fa-file-code d-block float-right"></i></h5>
+                    <p><b>Skill</b><i class="fas fa-file-code d-block float-right"></i></p>
                     <font size="2">
                     • HTML5
                     <div class="progress mb-2" style="height: 2px;">
@@ -164,5 +189,14 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script>
+        function checkPosition() {
+            if (window.matchMedia('(max-width: 384px)').matches) {
+                $('p').css("fontSize", "18px");
+            } else {
+                //...
+            }
+        }
+    </script> -->
 </body>
 </html>
